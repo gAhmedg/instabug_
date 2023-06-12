@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: Deployment
+
+metadata:
+  
+spec:
+  replicas: 2  #Add autoscaling of replicas
+  selector:
+   
+  strategy: {}
+  template:
+    metadata:
+      
+    spec:
+      containers:
+        - env:
+            - name: MYSQL_HOST
+              value: localhost
+            - name: MYSQL_PASS
+              value: mypassword
+            - name: MYSQL_PORT
+              value: "3306"
+            - name: MYSQL_ROOT_PASSWORD
+              value: rootpassword
+            - name: MYSQL_USER
+              value: user
+          image: mysql:8.0.33
+          name: database-insta
+          ports:
+          - containerPort: 3306
+          resources: {}
+      restartPolicy: Always
+status: {}

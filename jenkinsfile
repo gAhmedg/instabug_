@@ -10,28 +10,7 @@ environment {
         
        
 
-        stage('Build Docker') {
-            steps {
-                
-                    sh 'docker build -t algn48/go-insta .'
-                 }
-           
-          }
-
-
-        stage('Login') {
-            steps {
-               sh 'echo $DOCKERHUB_CREDENTIALS_PSW | docker login -u $DOCKERHUB_CREDENTIALS_USR --password-stdin'
-            }
-           
-        }
         
-        stage('Push image') { 
-            steps {
-
-            sh 'docker push algn48/go-insta'  
-            }
-        }
         stage('Logout') {
             steps {
                 sh 'docker logout'

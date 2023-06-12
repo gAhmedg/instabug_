@@ -1,0 +1,32 @@
+version: "3.8"
+services:
+
+  db:
+    image: 'mysql:8.0.33'
+    container_name: 'database_insta'
+    environment:
+      MYSQL_HOST: localhost
+      MYSQL_USER: user
+      MYSQL_PASS: mypassword
+      MYSQL_ROOT_PASSWORD : rootpassword
+      MYSQL_PORT: 3306
+    
+    ports:
+      - '3306:3306'
+    networks: # Networks to join (Services on the same network can communicate with each other using their name)
+      - backend
+      
+
+  go:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    container_name: go
+    ports: 
+      - "9090:8080"
+    depends_on: 
+    
+      - "db"
+    networks: 
+      - backend
+      

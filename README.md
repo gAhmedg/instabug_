@@ -1,4 +1,3 @@
-"# instabug_" 
 # instabug_
 
 ## 1- Dockerfile that build the app 
@@ -15,5 +14,5 @@ docker push algn48/go-insta2
 ### contains both application and mysql database
 
 ## 4-Helm manifests
-### \instabug\yml in the path have Chart and the basic yaml file with services
+### \instabug\yml in the path have Chart and the basic yaml file with services 
  

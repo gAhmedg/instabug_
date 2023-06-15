@@ -4,9 +4,9 @@ metadata:
  
 spec:
   ports:
-    - name: "9090"
+    - name: ""
       port: 9090
-      targetPort: 8080
+      targetPort: 9090
   selector:
     io.kompose.service: go
 status:

@@ -16,7 +16,7 @@ spec:
         - image: go
           name: go
           ports:
-            - containerPort: 8080
+            - containerPort: 9090
           resources: {}
       restartPolicy: Always
 status: {}

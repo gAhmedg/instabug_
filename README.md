@@ -1,5 +1,5 @@
 # instabug_
-[GitHub Repo](https://github.com/gAhmedg/instabug_.git)- link of me project
+## [GitHub Repo](https://github.com/gAhmedg/instabug_.git)- link of me project
 ## 1- Dockerfile that build the app 
 ### use alpine to make it lightweight 
 
@@ -15,4 +15,4 @@ docker push algn48/go-insta2
 
 ## 4-Helm manifests
 ### \instabug\yml in the path have Chart and the basic yaml file with services 
- 
+ <img src="screen/auto_scale.png"  width="500" height="300">

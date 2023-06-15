@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  
+spec:
+  replicas: #Add autoscaling of replicas
+  selector:
+    matchLabels:
+      io.kompose.service: go
+  strategy: {}
+  template:
+    metadata:
+     
+    spec:
+      containers:
+        - image: go
+          name: go
+          ports:
+            - containerPort: 9090
+          resources: {}
+      restartPolicy: Always
+status: {}

@@ -14,15 +14,19 @@ services:
     ports:
       - '3306:3306'
    
+<<<<<<< HEAD
     
 
+=======
+      
+>>>>>>> test
   go:
     build: 
       context: .
       dockerfile: Dockerfile
     container_name: go
     ports: 
-      - "9090:8080"
+      - "9090:9090"
     depends_on: 
     
       - "db"

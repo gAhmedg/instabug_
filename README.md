@@ -17,5 +17,7 @@ docker push algn48/go-insta2
 ### \instabug\yml in the path have Chart and the basic yaml file with services 
 
 ## 5-Add autoscaling manifest  
-### number of replicas
+### autoscaling with minimum and maximum replica
  <img src="screen/auto_scale.png"  width="500" height="300">
+ ### number of replicas
+ <img src="screen/number_of_replica"  width="500" height="300">

@@ -1,5 +1,9 @@
 # instabug_
 ## [GitHub Repo](https://github.com/gAhmedg/instabug_.git)- link of me project
+
+#### i have 2 branche main and test 
+#### when finish in test branch merge it in main branche
+
 ## 1- Dockerfile that build the app 
 ### use alpine to make it lightweight 
 
